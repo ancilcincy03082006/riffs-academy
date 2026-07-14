@@ -1,0 +1,91 @@
+.hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  filter: saturate(0.8) contrast(1.05);
+  animation: drift 18s ease-in-out infinite alternate;
+}
+
+.glass-card {
+  box-shadow: 0 20px 45px rgba(2, 6, 23, 0.25);
+}
+
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background: #f8fafc;
+}
+
+html.light .text-white,
+html.light .text-slate-100,
+html.light .text-slate-200,
+html.light .text-amber-100,
+html.light .text-amber-200,
+html.light .text-amber-300 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300,
+html.light .text-slate-400,
+html.light .text-slate-500 {
+  color: #475569 !important;
+}
+
+html.light .bg-slate-950\/60,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-950\/50,
+html.light .bg-slate-950\/95,
+html.light .bg-slate-950\/40,
+html.light .bg-slate-950\/70,
+html.light .bg-white\/10,
+html.light .bg-white\/5 {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+}
+
+html.light .bg-amber-400\/15,
+html.light .bg-amber-400\/10 {
+  background-color: rgba(245, 158, 11, 0.14) !important;
+}
+
+html.light .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+html.light .rounded-2xl,
+html.light .rounded-\[1\.5rem\],
+html.light .rounded-\[2rem\],
+html.light .rounded-\[1\.75rem\],
+html.light .rounded-\[1\.25rem\] {
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
+}
+
+html.light input,
+html.light textarea {
+  color: #0f172a !important;
+  background-color: rgba(255, 255, 255, 0.92) !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #64748b !important;
+}
+
+@keyframes drift {
+  from {
+    transform: scale(1.05) translateY(0);
+  }
+  to {
+    transform: scale(1.12) translateY(-10px);
+  }
+}
+
+.swiper-pagination-bullet {
+  background: rgba(251, 191, 36, 0.8) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fbbf24 !important;
+}
