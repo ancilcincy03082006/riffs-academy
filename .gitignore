@@ -11,7 +11,7 @@ build/
 coverage/
 
 # ==========================
-# Environment variables -- sample
+# Environment variables --change
 # ==========================
 .env
 .env.local
